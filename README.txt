@@ -1,4 +1,11 @@
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
 
-1.Start API
-2.SourceTree test
-3.New line
+git clone https://github.com/tonychacon/blink
+git status
+git checkout -b slow-blink
+git diff --word-diff
+git commit -a -m 'three seconds is better'
+git push origin slow-blink
+
+git pull
