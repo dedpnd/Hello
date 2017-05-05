@@ -8,4 +8,5 @@ git diff --word-diff
 git commit -a -m 'three seconds is better'
 git push origin slow-blink
 
+git checkout master
 git pull
