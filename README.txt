@@ -5,6 +5,7 @@ git clone https://github.com/tonychacon/blink
 git status
 git checkout -b slow-blink
 git diff --word-diff
+? git add .
 git commit -a -m 'three seconds is better'
 git push origin slow-blink
 
