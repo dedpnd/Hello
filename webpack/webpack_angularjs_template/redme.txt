@@ -1,0 +1,5 @@
+npm install static - тестовый сервер
+static - запуск 
+chrome -> /path/ - браузер 
+npm init - создать пакедж
+https://www.npmjs.com/package/webpack-livereload-plugin 
