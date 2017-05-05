@@ -1,0 +1,20 @@
+{
+  "name": "pack_for_task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "async": "^2.3.0",
+    "static": "^2.0.0",
+    "webpack": "^2.4.1"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.4",
+    "webpack-livereload-plugin": "^0.11.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
