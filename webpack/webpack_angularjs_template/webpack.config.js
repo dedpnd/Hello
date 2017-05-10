@@ -12,7 +12,7 @@ var options_LRP = {
 module.exports = {
     context : path.resolve(__dirname, "src"),
     entry : {
-        app: './app.js'
+        app: ['./app.js','./app_ts.ts']
     },
     output : {
         path : path.resolve(__dirname, "public"),
@@ -31,5 +31,17 @@ module.exports = {
         new webpack.ProvidePlugin({
             _:          'lodash'
         })
-    ]
+    ],
+    module: {
+        rules: [
+            {
+                test: /\.tsx?$/,
+                loader: 'ts-loader',
+                exclude: /node_modules/,
+            }
+        ]
+    },
+    resolve : {
+        extensions: [".tsx", ".ts", ".js"]
+    }
 }

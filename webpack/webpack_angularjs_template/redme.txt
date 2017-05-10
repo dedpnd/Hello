@@ -3,3 +3,4 @@ static - запуск
 chrome -> /path/ - браузер 
 npm init - создать пакедж
 https://www.npmjs.com/package/webpack-livereload-plugin 
+https://webpack.js.org/guides/webpack-and-typescript/

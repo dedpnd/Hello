@@ -10,7 +10,10 @@
     "webpack": "^2.5.0",
     "webpack-livereload-plugin": "^0.11.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.3.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
