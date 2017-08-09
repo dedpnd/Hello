@@ -1,4 +1,4 @@
-**[SSH]**(https://help.github.com/articles/connecting-to-github-with-ssh/)
+**[SSH](https://help.github.com/articles/connecting-to-github-with-ssh/)**
 
 ###### Set global setings
 ```
