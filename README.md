@@ -1,3 +1,5 @@
+[SSH](https://help.github.com/articles/connecting-to-github-with-ssh/)
+
 ###### Set global setings
 ```
 git config --global user.name "John Doe"
