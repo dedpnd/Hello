@@ -1,4 +1,5 @@
 ![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/dedpnd/yaradio-yamusic.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/dedpnd/yaradio-yamusic.svg)
 
 [**SSH**](https://help.github.com/articles/connecting-to-github-with-ssh/)
 
