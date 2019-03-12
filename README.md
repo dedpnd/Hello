@@ -1,12 +1,11 @@
 ![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/dedpnd/yaradio-yamusic.svg)
-![GitHub top language](https://img.shields.io/github/languages/top/dedpnd/yaradio-yamusic.svg)
-![GitHub repo size in bytes](https://img.shields.io/github/repo-size/dedpnd/yaradio-yamusic.svg)
-![GitHub All Releases](https://img.shields.io/github/downloads/dedpnd/yaradio-yamusic/total.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/dedpnd/yaradio-yamusic.svg)
 ![GitHub issues](https://img.shields.io/github/issues/dedpnd/yaradio-yamusic.svg)
 ![GitHub release](https://img.shields.io/github/release/dedpnd/yaradio-yamusic.svg)
-![GitHub](https://img.shields.io/github/license/dedpnd/yaradio-yamusic.svg)
+![GitHub All Releases](https://img.shields.io/github/downloads/dedpnd/yaradio-yamusic/total.svg)
 ![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/dedpnd/yaradio-yamusic/electron.svg)
-![GitHub last commit](https://img.shields.io/github/last-commit/dedpnd/yaradio-yamusic.svg)
+![GitHub](https://img.shields.io/github/license/dedpnd/yaradio-yamusic.svg)
+
 [**SSH**](https://help.github.com/articles/connecting-to-github-with-ssh/)
 
 ###### Set global setings
