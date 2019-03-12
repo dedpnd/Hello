@@ -1,3 +1,5 @@
+![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/dedpnd/yaradio-yamusic.svg)
+
 [**SSH**](https://help.github.com/articles/connecting-to-github-with-ssh/)
 
 ###### Set global setings
