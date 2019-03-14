@@ -1,0 +1,68 @@
+body{
+    margin: 0px;
+    font-size: 14px;
+}
+.main_container{
+    height: 100%;
+    position: absolute;
+    z-index: 0;    
+}
+.sidebar{
+    background: rgb(203, 203, 203);
+    height: 100%;
+    width: 17%;    
+    position: relative;
+    min-width: 200px;
+    z-index: 100; 
+}
+.button_block{
+    text-align: center;
+}
+.btn__bb{
+    min-width: 120px;
+    margin: 10px 10px 0px 10px;
+}
+.panel__bb{
+    margin-top: 10px;
+}
+.panel__array{
+    font-size: 15pt;
+    font-family: 'Choplin';
+    font-weight: 200;
+    font-style: normal;
+    padding: 5px;
+    min-height: 42px;
+}
+.array_number{
+    min-width: 60px;
+    text-align: center;
+    border: 1px solid #a6b6be;
+    border-radius: 21px;
+    padding: 0px 0.4em;
+    background-color: #d9edf7;
+    display: inline-block;    
+    margin: 1px;    
+    position: relative;
+    left: 0px;
+    top: 0px;
+    transition-duration: 0.7s;
+}
+.sidebar__left{
+    border-right: 1px solid #b4b4b4;
+    float: left;
+}
+.sidebar__right{
+    float: right;
+    border-left: 1px solid #b4b4b4;
+}
+.center_block{
+    position: relative;
+    margin: 5% 20%;
+    font-size: 30px;
+}
+.selected_number{
+    background-color: #F3F377;
+}
+.successful_number{
+    background-color: #D7FFD7;
+}

@@ -1,0 +1,49 @@
+<!--
+<div class="well">
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" ng-model="hide_users">Hide without photo
+        </label>
+    </div>
+</div>
+-->
+<div class="col-sm-12 col-md-12 col-lg-6 ">
+    <p>
+        <button type="button" ui-sref="new_user" class="btn btn-primary btn-sm">Add new user</button>
+    </p>
+    <div ng-repeat="user in $ctrl.users" ng-if="$ctrl.check_photo(hide_users,!!user.avatarUrl)" ng-click="$ctrl.select_card(user)" class="panel panel-info {{user.selected?'card_hover':''}}">
+        <div class="panel-heading">
+            <h3 class="panel-title">{{user.fullName}}</h3>
+            <i class="fa fa-times icon_more" style="padding-left: 10px" title="Удалить" ng-click="$ctrl.remove_user(user._id)"></i>
+            <a class="" ui-sref="about({userId: user._id})">
+                <i class="fa fa-pencil icon_more" title="Подробнее"></i>
+            </a>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-9 col-md-9 col-lg-9 ">
+                    <table class="table table-user-information">
+                        <tbody>
+                            <tr>
+                                <td>Дата рождения</td>
+                                <td>{{user.birthdate || 'Not found'}}</td>
+                            </tr>
+                            <tr>
+                                <td>Адрес</td>
+                                <td>{{user.address || 'Not found'}}</td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td><a href="mailto:{{user.email}}">{{user.email}}</a></td>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3 ">
+                    <avatar-card picture="user.avatarUrl"></avatar-card>
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer">
+        </div>
+    </div>
+</div>

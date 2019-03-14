@@ -1,0 +1,22 @@
+<h1 class="content-title">{{$ctrl.title}}</h1>
+<div class="form-group panel_contol">
+    <label for="limit_mails">Limit mails:</label>
+    <input id="limit_mails" type="text" ng-model="$ctrl.limit_mails" style="width: 30px;">
+    <label for="search_mails" style="padding-left: 30px;">Search mails:</label>
+    <input id="search_mails" type="text" ng-model="$ctrl.search_mails" style="width: 160px;">
+    <div class="btn-group" style="float:right; top: -3px;">
+        <button type="button" class="btn btn-primary mails_btn" ui-sref="new_letter">New letter</button>
+        <button id="remove_btn" type="button" class="btn btn-primary mails_btn" ng-click="$ctrl.remove_select_mails()">Delete</button>
+    </div>
+</div>
+<div class="col-sm-2 col-md-2 col-lg-2" style="padding: 0px">
+    <mail-boxes></mail-boxes>
+</div>
+<div class="col-sm-10 col-md-10 col-lg-10">
+
+    <ul class="mail-list">
+        <li ng-repeat="root_mail in $ctrl.mails | limitTo:$ctrl.limit_mails | filter:$ctrl.search_mails">
+            <user-mail mail="root_mail" delete-mail="$ctrl.delete_mail(id)" set-delete-flag-mail="$ctrl.set_delete_flag_mail(id,flag)"></user-mail>
+        </li>
+    </ul>
+</div>

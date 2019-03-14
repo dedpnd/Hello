@@ -1,0 +1,53 @@
+.img-preview{
+	margin: 0 auto;
+    margin-top: 10px;
+    border: 1px solid black;
+    width: 230px;
+    height: 140px;    
+    position: relative;
+}
+
+.img-main{
+    width: 600px;
+    height: 400px;    
+    border: 1px solid black;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.preview_slide, .main_slide{
+	height: 100%;
+	width: 100%;
+	display: none;    
+    position: absolute;
+}
+
+.control_panel{
+    position: relative;
+    top: 92%;
+    text-align: center;
+
+}
+
+.icon_slide{
+    position: relative;
+    margin: 3px;
+    padding: 3px 5px;
+    border: 1px solid black;
+    background-color: #FAFAFA;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.icon_slide_remove{
+    color: #D40000;
+    float: right;
+}
+
+.icon_preview_add{
+    float: right;
+}
+
+.icon_control_panel{
+    width: 30px;
+}

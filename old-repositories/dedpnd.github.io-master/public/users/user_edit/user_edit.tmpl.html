@@ -1,0 +1,64 @@
+<div class="panel panel-info ">
+    <div class="panel panel-heading">
+        <h3 class="panel-title">Редактирование</h3>
+        <button style="float:right; margin-top: -6px;" type="button" class="btn btn-primary btn-sm" ng-click="$ctrl.save()">Save</button>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-sm-9 col-md-9 col-lg-9 ">
+                <form name="myForm">
+                    <table class="table table-user-information">
+                        <tbody>
+                            <tr>
+                                <td>Имя*</td>
+                                <td>
+                                    <input type="text" name="userName" ng-model="$ctrl.user_.fullName" required>
+                                    <span class="error" ng-if="myForm.userName.$error.required">
+                                        <style>
+                                            input[name='userName']{
+                                                border-color: red;
+                                            }
+                                        </style>
+                                    </span>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Дата рождения</td>
+                                <td><input type="date" name="userBirth" ng-model="$ctrl.user_.birthdate" placeholder="dd-MM-yyyy">
+                                    <span class="error" ng-if="myForm.userBirth.$error.date">
+                                        <style>
+                                            input[name='userBirth']{
+                                                border-color: red;
+                                            }
+                                        </style>
+                                     </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Адрес</td>
+                                <td><input type="text" name="userAdress" ng-model="$ctrl.user_.address"></td>
+                            </tr>
+                            <tr>
+                                <td>Email*</td>
+                                <td><input type="email" name="userEmail" ng-model="$ctrl.user_.email" ng-pattern="$ctrl.email_pattern" required>
+                                    <span class="error" ng-if="myForm.userEmail.$error.required || myForm.userEmail.$error.pattern">
+                                        <style>
+                                            input[name='userEmail']{
+                                                border-color: red;
+                                            }
+                                        </style>
+                                    </span>
+                                </td>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3 ">
+                <avatar-card picture="$ctrl.user_.avatarUrl"></avatar-card>
+            </div>
+        </div>
+    </div>
+    <div class="panel-footer">
+    </div>
+</div>

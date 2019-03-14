@@ -1,0 +1,7 @@
+<ul class="form">
+    <li ng-repeat="mailbox in $ctrl.mailboxes" ui-sref-active="selected">
+        <a class={{$ctrl.class_menu[$index]}} ui-sref="box({mailBoxId: mailbox._id})">{{mailbox.title}} <em>{{mailbox.count}}</em></a>
+    </li>
+</ul>
+
+<!-- <li class="selected"><a class="messages" href="#">Sent mail <em>5</em></a></li> -->

@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Choplin';
+    src: local('Choplin ExtraLight-DEMO'), url('choplinextralight-demo.woff2') format('woff2'), url('choplinextralight-demo.woff') format('woff'), url('choplinextralight-demo.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Choplin';
+    src: local('Choplin Medium-DEMO'), url('choplinmedium-demo.woff2') format('woff2'), url('choplinmedium-demo.woff') format('woff'), url('choplinmedium-demo.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}

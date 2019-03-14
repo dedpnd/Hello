@@ -1,0 +1,17 @@
+<div class="s_mail">
+    <h2 class="s_mail_header">Send mail</h2>
+    <md-autocomplete md-no-cache="true" md-min-length="0" md-selected-item="$ctrl.user" md-items="item in $ctrl.querySearch($ctrl.searchText)" md-search-text="$ctrl.searchText" md-item-text="item.fullName" placeholder="To send mail">
+        <span md-highlight-text="$ctrl.searchText">{{ item.email }}</span>
+        <md-not-found>
+            User "{{$ctrl.searchText}}" not found.
+            <a ng-click="$ctrl.newUser($ctrl.searchText)">Create a new user?</a>
+        </md-not-found>
+    </md-autocomplete>
+    <input type="text" class="form-control" ng-model="$ctrl.subject" placeholder="Subject">
+    <p>
+        <textarea ng-model="$ctrl.body" class="form-control" rows="3"></textarea>
+    </p>
+    <p>
+        <button type="button" class="btn btn-primary" ng-click="$ctrl.send_mail()">Send mail</button>
+    </p>
+</div>

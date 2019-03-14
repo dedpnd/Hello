@@ -1,0 +1,9 @@
+<a ui-sref="single_mail({mailId: $ctrl.mail._id})">
+    <i class="fa fa-trash-o trash_mail" ng-click="$ctrl.delete($ctrl.mail._id,$event)"></i>
+    <span class="trash_chebox">
+        <input type="checkbox" ng-model="$ctrl.trash_cb" ng-click="$ctrl.stop($event);" ng-change="$ctrl.change_cb()" name="for_delete_mail">
+    </span>
+    <span class="mail-sender">{{$ctrl.mail.to}}</span>
+    <span class="mail-subject">{{$ctrl.mail.subject}}</span>
+    <span class="mail-message-preview">{{$ctrl.show_short_format($ctrl.mail.body)}}</span>
+</a>

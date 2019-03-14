@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Jslider</title>
+	<link href="i/jslider.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+	<script type="text/javascript" src="i/jslider.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+	<style type="text/css">
+		body{
+			margin: 0px;
+   			font-size: 14px;
+		}
+
+		.left-sidebar{
+   			background: rgba(129, 129, 129, 0.5);
+  			height: 100%;
+    		width: 300px;
+    		border-right: 1px solid #727272;
+    		position: fixed;
+		}
+
+		.centerblock{
+    		position: relative;
+   			margin: 0 calc(50% - 300px);
+ 			padding-top: 10px;
+		}
+	</style>
+
+</head>
+<body>
+
+	<div class="left-sidebar">
+	</div>
+
+	<div class="centerblock">
+	</div>
+
+	<script type="text/javascript">
+		/*
+		Объект для презентации:
+		name : название презентации
+		path : путь к презентации
+		slides : слайды презентации
+		main_target : селектор основного контейнера для презентации
+		preview_target : селектор контейнера для предпросмотра
+		*/
+		var presentation1 = {
+			name: 'first',
+			path: 'slide/first/',
+			slides: ['one.jpg','two.jpg','three.jpg'],
+			main_target: '.centerblock',
+			preview_target: '.left-sidebar'
+		},
+			presentation2 = {
+			name: 'second',
+			path: 'slide/second/',
+			slides: ['four.jpg','five.jpg','six.jpg'],
+			main_target: '.centerblock',
+			preview_target: '.left-sidebar'
+		};
+		
+		//Добавление презентаций в контейнер предпросмотра
+		jslider.img_preview(presentation1);
+		jslider.img_preview(presentation2);
+
+		//Добавление презентации в основной контейнер
+		jslider.img_main(presentation1);
+	</script>
+</body>
+</html>

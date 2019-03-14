@@ -1,0 +1,44 @@
+body {
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.trash_mail {
+    float: right;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.card_hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.panel-heading {
+    height: 40px;
+}
+
+h3.panel-title {
+    float: left;
+}
+
+i.icon_more {
+    float: right;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.panel_contol {
+    border: 1px solid #d0d0d0;
+    border-radius: 11px;
+    padding: 9px 20px;
+    font-size: 13px;
+}
+
+.panel-heading {
+    background-color: #f5f5f5 !important;
+}
+
+table.table-user-information input {
+    width: 100%;
+}
